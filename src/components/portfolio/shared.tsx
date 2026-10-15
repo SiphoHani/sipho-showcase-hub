@@ -2,9 +2,9 @@ import { Link, useRouterState } from '@tanstack/react-router';
 import { useEffect, useState, type ReactNode } from 'react';
 import { ArrowUpRight, ArrowRight, Download, Linkedin, Sun, Moon, Menu, X, MapPin, Code2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { linkedin } from '@/lib/portfolio';
+import { linkedin, cv } from '@/lib/portfolio';
 const nav = [{label:'Home',to:'/'},{label:'About',to:'/about'},{label:'Skills',to:'/skills'},{label:'Experience',to:'/experience'},{label:'Projects',to:'/projects'},{label:'Credentials',to:'/credentials'}] as const;
-export function CVButton({outline=false}: {outline?:boolean}) {return <Button variant={outline?'outline':'default'} asChild><a href='/downloads/sipho-hani-sithebe-cv.txt' download><Download/>Download CV</a></Button>;}
+export function CVButton({outline=false}: {outline?:boolean}) {return <Button variant={outline?'outline':'default'} asChild><a href={cv.url} download='Sipho-Hani-Sithebe-CV.pdf'><Download/>Download CV</a></Button>;}
 export function LinkedInButton({outline=true}: {outline?:boolean}) {return <Button variant={outline?'outline':'default'} asChild><a href={linkedin} target='_blank' rel='noreferrer'><Linkedin/>LinkedIn Profile<ArrowUpRight/></a></Button>;}
 export function Shell({children}: {children:ReactNode}) {
  const [dark,setDark]=useState(false);const [open,setOpen]=useState(false); const pathname=useRouterState({select:s=>s.location.pathname});

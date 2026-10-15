@@ -1,3 +1,23 @@
+import cvAsset from '@/assets/sipho-hani-sithebe-cv.pdf.asset.json';
+import portraitAsset from '@/assets/sipho-portrait.jpg.asset.json';
+import qualificationAsset from '@/assets/full-stack-qualification.pdf.asset.json';
+import qualificationPreview from '@/assets/full-stack-qualification-preview.jpg.asset.json';
+import sancsAsset from '@/assets/sancs-certificate.pdf.asset.json';
+import sancsPreview from '@/assets/sancs-certificate-preview.jpg.asset.json';
+import essentialsAsset from '@/assets/google-ai-essentials.pdf.asset.json';
+import essentialsPreview from '@/assets/google-ai-essentials-preview.jpg.asset.json';
+import productivityAsset from '@/assets/google-ai-productivity.pdf.asset.json';
+import productivityPreview from '@/assets/google-ai-productivity-preview.jpg.asset.json';
+export const contactDetails = { email: 'sihlezasithebe@gmail.com', phone: '072 946 4238', phoneHref: 'tel:+27729464238' };
+export const cv = cvAsset;
+export const portrait = portraitAsset;
+export const qualification = { name: 'Certificate in Full Stack Development', issuer: 'FNB App Academy / ITVarsity', date: '25 July 2025', credits: 32, file: qualificationAsset, preview: qualificationPreview };
+export const certificates = [
+ {name:'Southern Africa-Netherlands Cyber Security School',issuer:'Stellenbosch University & The Hague Centre for Strategic Studies',date:'April 2026',topics:['Cybersecurity','Security Awareness','Malware Defence','Cyber Resilience','Network Protection'],copy:'Successfully completed the third edition of the Southern Africa–Netherlands Cyber Security School.',file:sancsAsset,preview:sancsPreview,verify:null},
+ {name:'Google AI Essentials',issuer:'Google · Coursera',date:'14 October 2026',topics:['Introduction to AI','AI Productivity','Prompting','Responsible AI','Continuous Learning'],copy:'Completed the five-course specialization with hands-on practice in responsible AI use and productivity.',file:essentialsAsset,preview:essentialsPreview,verify:'https://coursera.org/verify/specialization/8D8Z63BUABFL'},
+ {name:'Maximize Productivity With AI Tools',issuer:'Google · Coursera',date:'14 October 2026',topics:['AI Tools','Productivity','Workflow Improvement'],copy:'Completed the Google-authorized course on using AI tools to improve productivity.',file:productivityAsset,preview:productivityPreview,verify:'https://coursera.org/verify/OANWBCR4YYNV'},
+ {name:'Cybersecurity Industry Challenge Participation',issuer:'Industry challenge',date:'30 April 2026',topics:['Industry collaboration','Cyber resilience','Critical infrastructure awareness','Digital risk management'],copy:'Collaborated with Group B21 on a digital assessment framework covering risk identification, security requirements, monitoring, and response. Participation is listed in the original CV.',file:null,preview:null,verify:null},
+];
 export const linkedin = 'https://www.linkedin.com/in/sipho-hani-sithebe-064988362';
 export const technicalSkills = ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'Git', 'GitHub', 'APIs', 'Data Management', 'User Experience Design', 'Design Thinking', 'Backend Development Fundamentals', 'AI-Assisted Development', 'Cybersecurity Fundamentals', 'Security Awareness'];
 export const businessSkills = ['Customer Service', 'Customer Retention', 'Collections', 'Debt Recovery', 'Stakeholder Management', 'Communication', 'Negotiation', 'Problem Solving', 'Team Collaboration', 'Compliance', 'Financial Services'];
