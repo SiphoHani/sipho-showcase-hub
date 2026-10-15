@@ -1,0 +1,8 @@
+import { createFileRoute } from '@tanstack/react-router';
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { Shell, PageTop, ConnectBand } from '@/components/portfolio/shared';
+import { ProjectCard } from '@/components/portfolio/project-card';
+import { projects,pageHead } from '@/lib/portfolio';
+export const Route=createFileRoute('/projects')({component:Projects,head:()=>pageHead('Project Portfolio','Explore Sipho Hani Sithebe’s live personal portfolio and project concepts spanning web development, banking analytics, customer management and cybersecurity.','/projects')});
+function Projects(){const [category,setCategory]=useState('All projects');return <Shell><PageTop eyebrow='Project portfolio' title='Ideas with real-world purpose.' copy='A live portfolio and project concepts inspired by financial services, customer experience, and a passion for technology.'/><section className='section'><div className='wrap'><div className='flex flex-wrap gap-2 mb-8' role='group' aria-label='Filter projects'>{['All projects','Web development','Data & analytics','Cybersecurity'].map(s=><Button key={s} variant={s===category?'default':'outline'} onClick={()=>setCategory(s)} aria-pressed={s===category}>{s}</Button>)}</div><div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>{projects.filter(p=>category==='All projects'||p.category===category).map(p=><ProjectCard key={p.id} project={p}/>)}</div><p className='section-copy text-xs mt-8'>Concept projects show proposed features and illustrative previews. Repositories and live demos will be linked when available.</p></div></section><ConnectBand/></Shell>;}
