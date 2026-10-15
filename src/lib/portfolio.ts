@@ -19,6 +19,8 @@ export const certificates = [
  {name:'Cybersecurity Industry Challenge Participation',issuer:'Industry challenge',date:'30 April 2026',topics:['Industry collaboration','Cyber resilience','Critical infrastructure awareness','Digital risk management'],copy:'Collaborated with Group B21 on a digital assessment framework covering risk identification, security requirements, monitoring, and response. Participation is listed in the original CV.',file:null,preview:null,verify:null},
 ];
 export const linkedin = 'https://www.linkedin.com/in/sipho-hani-sithebe-064988362';
+export const github = 'https://github.com/SiphHani';
+export const githubHandle = 'SiphHani';
 export const technicalSkills = ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'Git', 'GitHub', 'APIs', 'Data Management', 'User Experience Design', 'Design Thinking', 'Backend Development Fundamentals', 'AI-Assisted Development', 'Cybersecurity Fundamentals', 'Security Awareness'];
 export const businessSkills = ['Customer Service', 'Customer Retention', 'Collections', 'Debt Recovery', 'Stakeholder Management', 'Communication', 'Negotiation', 'Problem Solving', 'Team Collaboration', 'Compliance', 'Financial Services'];
 export const tools = ['Microsoft Excel', 'Microsoft Word', 'Outlook', 'CRM Systems', 'Avaya', 'CAMS', 'XDS', 'LSI'];

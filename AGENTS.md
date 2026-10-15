@@ -15,3 +15,4 @@
 - Use the shared portfolio shell and semantic global style tokens for every portfolio page; this preserves navigation and light/dark appearance.
 - The contact form prepares a LinkedIn message locally rather than transmitting submissions; direct email and telephone links use the CV-sourced contact record, with no delivery service configured.
 - Store uploaded portfolio documents and portrait as Lovable Assets pointers; use same-origin download links and image previews rather than cross-origin PDF embeds to keep files readable and downloadable.
+- Point every GitHub reference at the single profile URL held in the portfolio data module; never present per-project repository URLs that were not supplied, so code-hosting claims stay verifiable.
