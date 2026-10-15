@@ -3,4 +3,5 @@
 - [x] Build all portfolio pages and project previews.
 - [x] Add a downloadable CV summary and honest states for missing materials.
 - [x] Verify navigation, project filters, downloads, and mobile layout.
-- [ ] Add original photo, CV, certificate documents, contact details, employment dates, and GitHub links — awaiting supplied materials.
+- [x] Add supplied photo, original CV, four certificate documents, and CV contact details; verify previews and downloads.
+- [ ] Add GitHub links — awaiting profile/repository URLs.
